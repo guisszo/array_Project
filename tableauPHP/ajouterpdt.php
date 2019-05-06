@@ -99,8 +99,10 @@ $listProd = array(
     $prix=$_POST["prix"];
     $quantite=$_POST["quantite"];
 
-    if($nomprod!='' && $prix!='' && $quantite!=''){
+    if($nomprod!='' && $prix!='' && $quantite!='' && $prix>=50 && $quantite>0){
       array_push($listProd, array("$nomprod", "$prix", "$quantite", "$prix"*"$quantite"));
+      }else{
+        echo"<font color=red>SAISIR UNE QUANTITE POSITIVE ET UN PRIX SUPERIEUR A 50</font>";
       }
   
         for($i=0; $i<count($listProd); $i++){
