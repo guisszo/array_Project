@@ -71,7 +71,7 @@ if(isset($_GET['nom'])){
                     <tbody>';
                     $l = "modifierpdt.php?nom=".$nom;
                     $lien="<a href=".$l.">Modifier Produit</a>";
-                    echo $lien;
+                    
 
                 // Création du tableau
                 $listProd = array(
